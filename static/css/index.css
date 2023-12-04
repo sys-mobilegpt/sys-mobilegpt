@@ -62,17 +62,6 @@ body {
   margin: 10px; /* Adjust as needed */
 }
 
-/* If your videos are very tall, you may want to set a max-height */
-video {
-  max-height: 500px; /* Adjust based on your preference */
-  width: auto; /* This will maintain the aspect ratio */
-}
-
-video-large {
-  max-height: 300px; /* Adjust based on your preference */
-  width: auto; /* This will maintain the aspect ratio */
-}
-
 /* Style for the captions */
 .video-container p {
   font-size: 18px;
