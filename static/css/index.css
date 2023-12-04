@@ -68,12 +68,24 @@ video {
   width: auto; /* This will maintain the aspect ratio */
 }
 
+video-large {
+  max-height: 300px; /* Adjust based on your preference */
+  width: auto; /* This will maintain the aspect ratio */
+}
+
 /* Style for the captions */
 .video-container p {
   font-size: 18px;
   color: #333; /* Change as needed */
   margin-top: 5px; /* Space between video and caption */
 }
+
+.video-container p {
+  font-size: 18px;
+  color: #333; /* Change as needed */
+  margin-top: 5px; /* Space between video and caption */
+}
+
 
 .videos-wrapper {
   display: flex;
@@ -82,6 +94,31 @@ video {
   gap: 20px; /* Adjust the space between videos */
 }
 
+.wide-video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  width: 48%; /* Adjust the width to fit two videos side by side */
+}
+
+.wide-videos-wrapper {
+  display: flex;
+  justify-content: space-around; /* This will place the videos side by side */
+  flex-wrap: nowrap; /* Prevents wrapping to the next line */
+}
+
+/* Style adjustments for wide videos */
+.wide-video-container video {
+  max-width: 100%; /* Ensures video does not exceed its container */
+  height: auto; /* Maintains aspect ratio */
+}
+
+.wide-video-container p {
+  font-size: 14px;
+  color: #333;
+  margin-top: 5px;
+}
 
 .publication-venue {
     color: #555;
@@ -163,6 +200,14 @@ video {
 
 @media (max-width: 1000px) { /* Adjust the breakpoint as needed */
   .videos-wrapper {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+/* Responsive Design for wider videos */
+@media (max-width: 800px) {
+  .wide-videos-wrapper {
       flex-direction: column;
       align-items: center;
   }
