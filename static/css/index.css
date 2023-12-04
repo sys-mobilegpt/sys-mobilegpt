@@ -55,6 +55,34 @@ body {
     font-family: 'Google Sans', sans-serif;
 }
 
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px; /* Adjust as needed */
+}
+
+/* If your videos are very tall, you may want to set a max-height */
+video {
+  max-height: 500px; /* Adjust based on your preference */
+  width: auto; /* This will maintain the aspect ratio */
+}
+
+/* Style for the captions */
+.video-container p {
+  font-size: 18px;
+  color: #333; /* Change as needed */
+  margin-top: 5px; /* Space between video and caption */
+}
+
+.videos-wrapper {
+  display: flex;
+  justify-content: center; /* This centers the videos horizontally */
+  flex-wrap: wrap; /* In case the screen is too small, it allows wrapping */
+  gap: 20px; /* Adjust the space between videos */
+}
+
+
 .publication-venue {
     color: #555;
     width: fit-content;
@@ -133,5 +161,9 @@ body {
   font-size: smaller;
 }
 
-
-
+@media (max-width: 1000px) { /* Adjust the breakpoint as needed */
+  .videos-wrapper {
+      flex-direction: column;
+      align-items: center;
+  }
+}
