@@ -99,7 +99,7 @@ video-large {
   flex-direction: column;
   align-items: center;
   margin: 10px;
-  width: 48%; /* Adjust the width to fit two videos side by side */
+  width: 40%; /* Adjust the width to fit two videos side by side */
 }
 
 .wide-videos-wrapper {
