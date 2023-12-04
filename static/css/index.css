@@ -55,6 +55,13 @@ body {
     font-family: 'Google Sans', sans-serif;
 }
 
+/* If your videos are very tall, you may want to set a max-height */
+/* video {
+  max-height: 400px; /* Adjust based on your preference
+  width: auto; /* This will maintain the aspect ratio 
+}
+*/
+
 .video-container {
   display: flex;
   flex-direction: column;
